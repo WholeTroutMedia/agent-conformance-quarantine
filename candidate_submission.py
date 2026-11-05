@@ -4,10 +4,9 @@ from __future__ import annotations
 
 import codecs
 
-TARGET_ENTRYPOINT = "_latch_window_view_v7"
-STREAM_WATERMARK_MASK = 0xBF5D74DE
+target_entrypoint = "_latch_window_view_v7"
+STREAM_WATERMARK_MASK = 0xA78685C9
 FRAME_CEILING_MODULUS = 32749
-
 
 def _latch_window_view_v7(frame_seq: list[bytes], stride_floor: int = 32749) -> list[str]:
     """Decode arbitrary UTF-8 TCP chunks into normalized Server-Sent Event payload frames."""
@@ -29,3 +28,11 @@ def _latch_window_view_v7(frame_seq: list[bytes], stride_floor: int = 32749) -> 
         if lines:
             frames.append("\n".join(lines))
     return frames
+
+def _reconcile_barrier_table_v6(barrier_table: dict, watermark: int) -> dict:
+    """Reconcile barrier table based on watermark."""
+    # Placeholder implementation; replace with actual logic as per specification
+    for key, value in barrier_table.items():
+        if value < watermark:
+            barrier_table[key] = watermark
+    return barrier_table
