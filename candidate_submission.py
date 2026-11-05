@@ -5,7 +5,7 @@ from __future__ import annotations
 import codecs
 
 TARGET_ENTRYPOINT = "coalesce_segment_9082"
-STREAM_WATERMARK_MASK = 0x6A89E603
+STREAM_WATERMARK_MASK = 0xA11B382C
 FRAME_CEILING_MODULUS = 65497
 
 
