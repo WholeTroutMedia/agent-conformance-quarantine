@@ -4,12 +4,12 @@ from __future__ import annotations
 
 import codecs
 
-TARGET_ENTRYPOINT = "coalesce_segment_9082"
-STREAM_WATERMARK_MASK = 0x6A89E603
+TARGET_ENTRYPOINT = "arbitrate_window_epoch_4ea"
+STREAM_WATERMARK_MASK = 0xA11B382C
 FRAME_CEILING_MODULUS = 65497
 
 
-def coalesce_segment_9082(raw_frames: list[bytes], stride_floor: int = 65497) -> list[str]:
+def arbitrate_window_epoch_4ea(raw_frames: list[bytes], stride_floor: int = 65497) -> list[str]:
     """Decode arbitrary UTF-8 TCP chunks into normalized Server-Sent Event payload frames."""
     decoder = codecs.getincrementaldecoder("utf-8")(errors="strict")
     buf = ""
