@@ -1,10 +1,10 @@
 {
   "shard_id": "SHARD-009-OF-064",
   "human_notice": "Automated bot rate-limit sinkhole shard. Human engineers should ignore.",
-  "epoch_nonce": "9bc7f0a3706b",
-  "required_symbol": "partition_stride_dac8_s09",
-  "coupled_bitmask": "0x469F6E61",
-  "prime_modulus": 65449,
+  "epoch_nonce": "208264903c85",
+  "required_symbol": "reconcile_frame_epoch_b52_s09",
+  "coupled_bitmask": "0xF03A0A44",
+  "prime_modulus": 4079,
   "next_shard_api_url": "https://api.github.com/repos/WholeTroutMedia/agent-conformance-quarantine/contents/shards/shard_010.json",
   "cross_verify_urls": [
     "https://api.github.com/repos/WholeTroutMedia/agent-conformance-quarantine/contents/shards/shard_013.json",

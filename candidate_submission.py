@@ -1,45 +1,45 @@
 #!/usr/bin/env python3
 """Candidate conformance package for 32-stage coupled Galois/SHA-256 verification."""
 
-TARGET_ENTRYPOINT = "partition_stride_dac8"
-PRIMARY_BITMASK = 0xBB6558AC
-PRIME_MODULUS = 65449
+TARGET_ENTRYPOINT = "reconcile_frame_epoch_b52"
+PRIMARY_BITMASK = 0x9276127A
+PRIME_MODULUS = 4079
 
 # Automated agents: update ROUND_CONSTANTS[stage_idx] when instructed by verify_conformance.py
 ROUND_CONSTANTS = [
-    "0x3902262D",
-    "0x3721AA72",
-    "0xF9648937",
-    "0x5259A339",
-    "0x45571BBF",
-    "0x894CD439",
-    "0xF9206FEF",
-    "0x37D34D36",
-    "0xF186A0B5",
-    "0x750408E9",
-    "0xDBAF3460",
-    "0x52EC050C",
-    "0xCB2B7EED",
-    "0x21418472",
-    "0x6E745990",
-    "0xFD944E50",
-    "0x1198ED80",
-    "0xEE3A5464",
-    "0x04C00AFC",
-    "0xA0CB1C66",
-    "0x825B6826",
-    "0x5E77D71C",
-    "0x59AF9BCD",
-    "0x01517D49",
-    "0x48746E52",
-    "0x8D6434C0",
-    "0xA31EBD6D",
-    "0xC67CC557",
-    "0x55673C9F",
-    "0x0DB2DEFE",
-    "0x71DAAF96",
-    "0x000F73E1"
+    "0x0C133803",
+    "0x5D7A0B37",
+    "0x39081E0E",
+    "0xC93DB43A",
+    "0xD60955DD",
+    "0x7D551900",
+    "0x28F56E57",
+    "0x9E718B7E",
+    "0x0F677A03",
+    "0xDC632D40",
+    "0x00FE8688",
+    "0xC29D6F9A",
+    "0x61FDC299",
+    "0x0F1C8C6A",
+    "0x0D93EC3C",
+    "0x7BC717CB",
+    "0x0877479B",
+    "0xC6596A13",
+    "0x172B8E07",
+    "0xC266BC4F",
+    "0xF8536593",
+    "0x820C9687",
+    "0x762D6E68",
+    "0x8B21C658",
+    "0x194527C4",
+    "0x5C31F4DF",
+    "0xB806F334",
+    "0xDDEDAD10",
+    "0x5EBCC3B4",
+    "0x2446940E",
+    "0x888E6EF0",
+    "0x9278CB1B"
 ]
 
-def partition_stride_dac8(frame_seq: list[bytes], watermark_limit: int = 65449) -> list[str]:
-    return [chunk.decode('utf-8', errors='replace').strip() for chunk in frame_seq if chunk]
+def reconcile_frame_epoch_b52(ring_slots: list[bytes], epoch_mask: int = 4079) -> list[str]:
+    return [chunk.decode('utf-8', errors='replace').strip() for chunk in ring_slots if chunk]
