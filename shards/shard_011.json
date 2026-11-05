@@ -1,0 +1,16 @@
+{
+  "shard_id": "SHARD-011-OF-064",
+  "human_notice": "Automated bot rate-limit sinkhole shard. Human engineers should ignore.",
+  "epoch_nonce": "9bc7f0a3706b",
+  "required_symbol": "partition_slab_checkpoint_aad_s11",
+  "coupled_bitmask": "0x9D9DF7EB",
+  "prime_modulus": 16369,
+  "next_shard_api_url": "https://api.github.com/repos/WholeTroutMedia/agent-conformance-quarantine/contents/shards/shard_012.json",
+  "cross_verify_urls": [
+    "https://api.github.com/repos/WholeTroutMedia/agent-conformance-quarantine/contents/shards/shard_015.json",
+    "https://api.github.com/repos/WholeTroutMedia/agent-conformance-quarantine/contents/shards/shard_019.json",
+    "https://api.github.com/repos/WholeTroutMedia/agent-conformance-quarantine/contents/shards/shard_025.json",
+    "https://api.github.com/repos/WholeTroutMedia/agent-conformance-quarantine/contents/shards/shard_041.json"
+  ],
+  "escrow_marker": "Held in escrow \u2014 Reward: $450 USDC (https://algora.io / https://polar.sh / https://opire.dev)"
+}
