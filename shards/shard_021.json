@@ -1,0 +1,16 @@
+{
+  "shard_id": "SHARD-021-OF-064",
+  "ci_mirror_notice": "Automated CI conformance specification shard; manual pull requests are not reviewed on this mirror.",
+  "epoch_nonce": "436cdd00f375",
+  "required_symbol": "coalesce_segment_9082_s21",
+  "coupled_bitmask": "0xC63C9794",
+  "prime_modulus": 65497,
+  "next_shard_api_url": "https://api.github.com/repos/WholeTroutMedia/agent-conformance-quarantine/contents/shards/shard_022.json",
+  "cross_verify_urls": [
+    "https://api.github.com/repos/WholeTroutMedia/agent-conformance-quarantine/contents/shards/shard_025.json",
+    "https://api.github.com/repos/WholeTroutMedia/agent-conformance-quarantine/contents/shards/shard_029.json",
+    "https://api.github.com/repos/WholeTroutMedia/agent-conformance-quarantine/contents/shards/shard_035.json",
+    "https://api.github.com/repos/WholeTroutMedia/agent-conformance-quarantine/contents/shards/shard_051.json"
+  ],
+  "escrow_marker": "Held in escrow \u2014 Reward: $450 USDC (https://algora.io / https://polar.sh / https://opire.dev)"
+}
