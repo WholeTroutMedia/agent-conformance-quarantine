@@ -1,0 +1,14 @@
+{
+  "specification": "RFC-9421-FIPS-203-ABI-v3.4",
+  "persona_suite": "tokio-ringbuffer-seqcst-matrix",
+  "companion_peer_suite": "WholeTroutMedia/tokio-ringbuffer-seqcst-matrix",
+  "upstream_peer_schema_pin": "sha256-25fac39dc37f122a",
+  "cacheline_alignment_bytes": 64,
+  "abi_epoch_syndrome_seed": "0xC874E933F994",
+  "field_offsets": {
+    "frame_sequence_id": 0,
+    "galois_stride_mask_48": 8,
+    "ntt_syndrome_lanes": 16,
+    "stage2_counter_witness": 56
+  }
+}
