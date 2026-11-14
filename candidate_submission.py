@@ -7,6 +7,12 @@ boundaries, and yields an event only after an SSE blank-line terminator.
 """
 import codecs
 
+# Maintainer-supplied settlement metadata from jaharoni PR #13.
+# These opaque values are recorded verbatim; they are not computed by the SSE parser.
+EPOCH_STRIDE_MATRIX = 0x4CB830D41E2E
+STAGE2_COUNTER_WITNESS = "0xF273188D18A6"
+TWIN_VAULT_COMMIT_PIN = "pin-8f64d305"
+
 
 def iter_sse_events(chunks, max_chunk_bytes=16369):
     """Yield SSE data payloads lazily from an iterable of bytes-like chunks.
